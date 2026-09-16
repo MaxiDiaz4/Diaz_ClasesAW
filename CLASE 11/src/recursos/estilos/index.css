@@ -1,0 +1,131 @@
+/*
+Sintaxis
+*/
+
+
+
+/*
+Regla de estilo
+*/
+/*
+selector {
+
+    propiedad1: valor;
+    propiedad2: valor;
+}
+    */
+
+* {
+    box-sizing: border-box;
+    /*MODELO DE CAJA ALTERNATIVO */
+}
+
+/* IMPORTAR FUENTE */
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fuentes/Poppins-Regular.ttf);
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    /*outline: 1px red solid; */
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Selectores de TIPO*/
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(1, 217, 233);
+}
+
+.encabezado-principal {
+    background-color: #030303;
+}
+
+header {
+    background-color: rgb(253, 236, 2);
+}
+
+header {
+    background-color: rgb(253, 2, 2);
+}
+
+a {
+    color: #f7f5f5;
+    text-decoration: none;
+}
+
+/* SELECTOR DE CLASE */
+/*.vinculos{
+    color: #FFFFFF;
+} */
+
+.encabezado-principal {
+    /*afecta el compartamiento externo e interno */
+    display: flex;
+    flex-direction: row;
+    /*invierte el eje principal a la izq (row reverse)*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dddddd;
+    padding: 5px;
+}
+
+.encabezado-principal a img {
+    width: 50px;
+}
+
+.encabezado-principal .vinculos a {
+    color: #200e0e;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido-principal {}
+
+
+.contenido-principal .contenedor-form {
+    padding: 20px 20%;
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-principal .contenedor-form input{
+    padding: 15px ;
+}
+
+.contenido-principal .contenedor-form select{
+    padding: 15px ;
+}
+
+.contenido-principal iframe{
+    width: 100%;
+}
+/* PIE PRINCIPAL */
+.pie-principal {
+    background-color: #dbd8d8;
+}
+
+/* ATRIBUTOS */
+/*[href]{
+
+}*/
+
+
+
+/*#contactos{
+
+}*/
